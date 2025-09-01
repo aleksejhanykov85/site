@@ -1,0 +1,436 @@
+ body {
+     background: black;
+ }
+
+ section {
+     padding: 100px;
+ }
+
+ footer,
+ header {
+     background-size: contain;
+     padding: 0px;
+     margin: 0px;
+ }
+
+ footer {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     padding-bottom: 100px;
+ }
+
+ img {
+     max-width: none;
+     height: auto;
+     object-fit: cover;
+ }
+
+ header svg {
+     display: flex;
+     margin-top: 55px;
+
+
+ }
+
+ header h1 {
+     display: flex;
+     color: white;
+     margin-top: 45px;
+
+ }
+
+ .logo {
+     display: inline-flex;
+     align-items: center;
+     gap: 12px;
+     flex: 0 1 auto;
+     min-width: 160px;
+ }
+
+ .logo svg {
+     width: 60px;
+     height: 60px;
+     display: block;
+     flex: 0 0 auto;
+     margin: 0;
+ }
+
+ /* icons */
+
+ .social_link {
+     width: 60px;
+     height: 60px;
+     display: inline-block;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     flex: 0 0 auto;
+ }
+
+
+ ul {
+     display: flex;
+     justify-content: flex-end;
+     list-style-type: none;
+     margin-left: auto;
+     margin-top: 55px;
+
+ }
+
+ li {
+     margin-right: 50px;
+ }
+
+ .social_link--youtube {
+     background-image: url(https://live.verstaem.online/cyberpunk/img/youtube.svg);
+     background-color: #26D394;
+     border-radius: 25%;
+ }
+
+ .social_link--vk {
+     background-image: url(https://live.verstaem.online/cyberpunk/img/vk.svg);
+     background-color: #26D394;
+     border-radius: 42%;
+ }
+
+ .social_link--facebook {
+     background-image: url(https://live.verstaem.online/cyberpunk/img/facebook.svg);
+     background-color: #26D394;
+     border-radius: 30%;
+ }
+
+ .social_link--twitch {
+     background-image: url(https://live.verstaem.online/cyberpunk/img/twitch.svg);
+     background-color: #26D394;
+     border-radius: 25%;
+ }
+
+ ul li:last-child {
+     margin-right: 0;
+ }
+
+ .up_of_head {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 16px;
+     flex-wrap: wrap;
+     padding: 16px 0;
+     box-sizing: border-box
+ }
+
+ @media (max-width: 700px) {
+     .up_of_head {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+
+     .logo {
+         width: 100%;
+         min-width: 0;
+     }
+ }
+
+ .up_of_head ul {
+     display: flex;
+     gap: 8px;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     align-items: center;
+ }
+
+ .up_of_head ul li a.social_link {
+     width: 40px;
+     height: 40px;
+     display: inline-block;
+ }
+
+ @media (min-width: 600px) {
+     .up_of_head ul {
+         gap: 12px;
+     }
+
+     .up_of_head ul li a.social_link {
+         width: 48px;
+         height: 48px;
+     }
+ }
+
+ @media (min-width: 900px) {
+     .up_of_head ul {
+         gap: 16px;
+     }
+
+     .up_of_head ul li a.social_link {
+         width: 52px;
+         height: 52px;
+     }
+ }
+
+ @media (min-width: 1200px) {
+     .up_of_head ul {
+         gap: 24px;
+     }
+
+     .up_of_head ul li a.social_link {
+         width: 60px;
+         height: 60px;
+     }
+ }
+
+ .btn-itd {
+     display: block;
+     max-width: 300px;
+     margin: 0 auto;
+     padding: 15px 35px;
+     color: white;
+     background-color: #26D394;
+     margin-bottom: 70px;
+ }
+
+ .btn-itd:hover {
+     color: white;
+     background-color: #F7932E;
+ }
+
+ /* Шрифты */
+ .font_head {
+     font-family: "Jersey 15", sans-serif;
+     margin: 0;
+     font-size: 100px;
+     margin-bottom: 70px;
+     text-decoration: underline #26D394;
+     line-height: 1;
+ }
+
+ .avowed_font {
+     font-family: "Advent Pro", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 601;
+     font-style: italic;
+     font-variation-settings:
+         "wdth" 107.5;
+     font-size: 50px;
+ }
+
+ .doom_font {
+     font-family: "Goudy Bookletter 1911", serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 50px;
+ }
+
+ .gta_font {
+     font-family: "Kelly Slab", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 50px;
+
+ }
+
+ .border_font {
+     font-family: "Rubik Bubbles", system-ui;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 50px;
+ }
+
+ .preface {
+     background-color: black;
+     margin-bottom: 120px;
+
+ }
+
+ .preface_border {
+     border: 10px solid #26D394;
+     padding: 50px;
+ }
+
+ .preface_font {
+     font-family: "Montserrat Alternates", sans-serif;
+     font-size: 50px;
+     color: white;
+
+ }
+
+ @media (max-width: 600px) {
+     .preface_font {
+         font-size: 20px;
+     }
+
+     .preface_border {
+         border: 10px solid #26D394;
+         padding: 0px;
+         margin-right: -25px;
+     }
+ }
+
+ @media (max-width: 600px) {
+     .small_font {
+         font-size: 20px;
+     }
+ }
+
+ /* овалы */
+
+ .oval {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     top: 50px;
+     width: 100%;
+     height: 100px;
+     background-color: black;
+     border-radius: 700px / 100px;
+     position: relative;
+     z-index: 2;
+ }
+
+ .oval2 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     bottom: 50px;
+     width: 100%;
+     height: 100px;
+     background-color: black;
+     border-radius: 700px / 100px;
+     position: relative;
+     z-index: 2;
+ }
+
+ a {
+     color: #26D394;
+     text-decoration: none;
+ }
+
+ a:hover {
+     color: #F7932E;
+ }
+
+ footer p {
+     display: flex;
+     position: absolute;
+     align-items: center;
+     justify-self: center;
+     font-size: 50px;
+     font-style: italic;
+     font-family: "Lobster", sans-serif;
+     font-weight: 400;
+     margin-top: -50px;
+ }
+
+ hr {
+     margin-top: 90px;
+     background-color: #26D394;
+     color: #26D394;
+     border-bottom: 10px solid #26D394;
+     opacity: 100%;
+     border-radius: 80%;
+ }
+
+
+
+ .slider {
+     width: 100%;
+     /* Фиксированная ширина */
+     overflow: hidden;
+     /* Скрываем выходящие за границы изображения */
+     position: relative;
+     height: auto;
+ }
+
+ .slides {
+     display: flex;
+     /* Располагаем слайды в ряд */
+     width: 400%;
+     /* Делаем ширину в три раза больше (по количеству слайдов) */
+     transition: transform 0.5s ease-in-out;
+     /* Плавное переключение слайдов */
+ }
+
+ .slide {
+     width: 100%;
+     flex-shrink: 0;
+ }
+
+ .slide img {
+     width: 100%;
+     display: block;
+     height: auto;
+ }
+
+ .media-row {
+     display: flex;
+     gap: 20px;
+     align-items: flex-start;
+ }
+
+ .media-text {
+     flex: 1 1 auto;
+ }
+
+ .media-right {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     flex: 0 0 auto;
+ }
+
+ .media-right .thumb {
+     width: 500px;
+     max-width: 100%;
+     height: auto;
+     display: block;
+     border-radius: 6px;
+ }
+
+
+ @media (max-width: 768px) {
+     .media-row {
+         flex-direction: column;
+     }
+
+     .media-right {
+         flex-direction: row;
+         flex-wrap: wrap;
+         gap: 8px;
+     }
+
+     .media-right .thumb {
+         width: 48%;
+     }
+ }
+
+ #top_games .container {
+     margin-bottom: 150px;
+ }
+
+ #top_games .container:first-child {
+     margin-top: -150px;
+ }
+
+ #top_games .container:last-child {
+     margin-bottom: -10px;
+ }
+
+ footer svg {
+     position: flex;
+     top: 15px;
+     left: 340px;
+ }
+
+ #icons {
+     width: 50px;
+     height: 50px;
+ }
+
+ @media (max-width: 600px) {
+     #icons {
+         width: 20px;
+         height: 20px;
+     }
+ }
